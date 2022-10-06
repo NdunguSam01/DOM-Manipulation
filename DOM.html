@@ -1,0 +1,65 @@
+<!--
+Document Object Model
+    -Data representation of the objects that comprise the structure and content of a web document
+    -Programming interface for HTML and XML documents
+    -Created by the browser when a web page is rendered
+    -Represents the page so that the programs can change the document structure, style and content
+    -Represents the document as nodes and objects thus ensuring programming languages can connect to the page
+    -Enables manipulation of the document
+    -DOM of a web page can be represented graphically in form of a hierarchical tree structure
+    -JS uses DOM to perform multiple tasks e.g creating and deleting web page elements (HTML and CSS elements)
+    -User interaction is added by using event listeners
+        -click 
+        -submit
+
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
+        <title>JavaScript DOM Manipulation</title>
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="page-banner">
+                    <h1 class="title" style="color: #fff;">Movie time</h1>
+                    <p style="color: #fff;">A list of movies to watch this weekend</p>
+                </div>
+            </header>
+            <div id="movie-list">
+                <h2 class="title">Movies to watch</h2>
+                <ul>
+                    <li>
+                        <span class="name">The intern</span>
+                        <span class="delete" onclick="alert('Delete movie?')">Delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Black Panther</span>
+                        <span class="delete" onclick="alert('Delete movie?')">Delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Avengers: Engame</span>
+                        <span class="delete" onclick="alert('Delete movie?')">Delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Avengers: Infinity War</span>
+                        <span class="delete" onclick="alert('Delete movie?')">Delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Olympus Has Fallen</span>
+                        <span class="delete" onclick="alert('Delete movie?')">Delete</span>
+                    </li>
+                </ul>
+            </div>
+            <form id="new-movie">
+                <input type="text" placeholder="Add a new movie">
+                <button>Add</button>
+            </form>
+
+        </div>
+    </body>
+</html>
