@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded',function()
 
         //Setting text content
         movieName.textContent = value;
-        deleteBtn.textContent = "delete";
+        deleteBtn.textContent = "Delete";
 
         //Creating the new classes
         movieName.classList.add('name');
